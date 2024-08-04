@@ -1,0 +1,513 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url("./assets/img/bg.png");
+}
+/*MENU*/
+header{
+    height: 150px;
+    padding-left: 20px;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+#logo{
+    width: 10%;
+    height: 100%;
+    float: left;
+}
+
+h1{
+    float: left;
+    line-height: 140px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgb(0, 145, 241);
+    margin-left: 10px;
+    text-shadow: 1px 1px 1px rgb(15, 15, 15);
+    letter-spacing: 2px;
+}
+
+nav{
+    margin-top: 40px;
+}
+
+nav > ul{
+    width: 100%;
+    list-style: none;
+    background-color: rgb(15, 15, 15);
+    border-bottom: 5px solid rgb(0, 145, 241);
+
+}
+
+nav > ul >li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav  ul li a{
+    text-decoration: none;
+    color: rgb(0, 145, 241);
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+nav  ul li a:hover{
+    color: rgb(15, 15, 15);
+    background-color: white;
+}
+
+ul  ul{
+    display: none;
+}
+
+#categories:hover  ul{
+    display: block;
+    background-color: rgb(15, 15, 15);
+    position: absolute;
+    list-style: none;
+    width: 9%;
+    padding: 5px;
+    border: 4px solid rgb(0, 145, 241);
+}
+
+
+
+#categories:hover  ul li{
+    margin-top: 10px;
+    width: 100%;
+
+}
+
+#categories:hover  ul li a{
+    width: 100%;
+    padding: 0px;
+    text-align: left;
+
+}
+
+
+
+
+#container {
+    width: 80%;
+    margin: 0px auto;
+
+    box-shadow: 0px 0px 3px rgb(15, 15, 15);
+}
+
+#content{
+    background-color: white;
+    height: fit-content;
+    width: 67%;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 4px rgb(15, 15, 15);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+ aside {
+     float: left;
+    width: 20%;
+    border-right: 5px solid gray;
+    padding: 20px;
+   
+}
+
+aside form input{
+    width: 90%;
+    margin-top: 10px;
+    border: 2px solid rgb(15, 15, 15);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+aside form input[type="submit"]{
+    width: 45%;
+    display: block;
+    margin: 15px auto;
+}
+
+aside form label{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+}
+
+aside h2{
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer{
+    clear: both;
+}
+
+.error{
+    color: red;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.succeed{
+    color: green;
+    font-weight: bolder;
+    font-size: 20px;
+
+}
+
+#categoriesContainer > form{
+    float: left;
+    width: 60%;
+}
+
+#categoriesContainer > form >input[type="text"]{
+    display: block;
+    width: 100%;
+}
+
+#categoriesContainer > form > input{
+    display: block;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 5px;
+
+}
+
+#categoriesContainer > form > input[type="submit"]{
+    background-color:  rgb(0, 145, 241);
+    color: white;
+}
+
+#categoriesContainer > form > label{
+    display: block;
+    margin-top: 10px;
+}
+
+#categoriesContainer > ul{
+    float: right;
+    list-style: none;
+}
+
+#categoriesContainer > ul > h3{
+    margin-bottom: 5px;
+}
+
+#categoriesContainer > ul > li{
+    background-color:  rgb(0, 145, 241);
+    border: 2px solid rgb(15, 15, 15);
+    padding: 10px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#addProducts > form > input, #addProducts > form > label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#addProducts > form > input{
+    border-radius: 10px;
+    padding: 5px;
+}
+
+aside a{
+    text-decoration: none;
+    display: block;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+
+.product{
+    width: 30%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.product:hover{
+    transform: scale(1.02);
+}
+
+.product > a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+}
+
+.product  img{
+    display: block;
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+}
+
+.product p, .product h4{
+    text-align: center;
+    font-size: 18px;
+}
+
+.product p{
+    color: green;
+    font-weight: bolder;
+}
+
+
+
+.productPage img{
+    width: 40%;
+    float: left;
+}
+
+.productPage ul{
+    float: left;
+    margin-left: 140px;
+}
+
+.productPage ul li{
+    margin-top: 15px;
+}
+
+.boton{
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px ;
+}
+.delete{
+    background-color: red;
+    color: white;
+    
+}
+
+.edit{
+    background-color: green;
+    color: white; 
+}
+
+.productPage form {
+    clear: both;
+    display: block;
+    margin-top: 16px;
+    border: 2px solid rgb(15, 15, 15);
+    box-shadow: 4px 4px 2px #acacac;
+    padding: 10px;
+    width: 50%;
+    float: right;
+    margin-right: 10px;
+}
+
+
+.productPage form input{
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.productPage form input, .productPage form label{
+    display: block;
+    margin-top: 10px;
+  
+}
+.productPage form input[type="number"]{
+    width: 50px;
+}
+
+.productPage form input[type="submit"]{
+    background-color: rgb(0, 145, 241);
+    font-weight: bolder;
+    color: white;
+}
+
+.product span{
+    display: inline-block;
+    float: right;
+    background-color: rgb(0, 145, 241);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(15, 15, 15);
+    font-weight: bolder;
+    color: white;
+    box-shadow: 2px 2px 2px #acacac;
+    margin-bottom: 4px;
+    width: 45%;
+    text-align: center;
+}
+
+#pedidoLink:hover{
+    transform: scale(1.2);
+}
+
+#makeOrderForm form{
+    width: 40%;
+    float: left;
+}
+
+#makeOrderForm input,#makeOrderForm label{
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+#pedidoLink, #makeOrderForm input[type="submit"]{
+    display: block;
+    text-decoration: none;
+    margin-top: 20px;
+    float: right;
+    background-color: rgb(0, 145, 241);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgb(15, 15, 15);
+    font-weight: bolder;
+    color: white;
+    box-shadow: 4px 4px 4px rgb(15, 15, 15);
+}
+
+#makeOrderForm input[type="submit"]:hover{
+    transform: scale(1.02);
+}
+
+#factura{
+    float: left;
+    margin-left: 40px;
+}
+
+#factura {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    float: left;
+    width: 50%;
+
+  }
+  
+  table td, table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  table tr:nth-child(even){
+     background-color: #f2f2f2;
+}
+  
+ table tr:hover {
+     background-color: #ddd;
+}
+  
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0, 145, 241);
+    color: white;
+  }
+
+table th, table tr{
+    text-align: center;
+}
+
+.cartError{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+    color: red;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.order{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(15, 15, 15);
+    padding: 20px;
+    overflow: auto;
+    border-radius: 20px;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 4px 4px 4px #686868;
+}
+
+.order ul{
+   width: 55%;
+   margin-left: 20px;
+   float: left;
+   font-size: 20px;
+   color: rgb(0, 145, 241);
+}
+
+.order ul h3{
+    
+   color: white;
+   text-align: center;
+}
+
+.order ul li{
+    margin-top: 10px;
+}
+.order table{
+    display: block;
+   float: right;
+   background-color: white;
+}
+
+#deleteLink{
+    display: block;
+    width: 30%;
+    border-radius: 10px;
+    background-color: red;
+    border: 2px solid rgb(15, 15, 15);
+    padding: 5px;
+    color: white;
+    text-align: center;
+    float: left;
+    margin-bottom: 10px;
+}
+
+#statusForm{
+    margin-top: 20px;
+    color: white;
+}
+
+.asideLink{
+    background-color: rgb(15, 15, 15);
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px #686868;
+    font-size: 18px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+footer{
+    text-align: center;
+    background-color: rgb(15, 15, 15);
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    
+}
